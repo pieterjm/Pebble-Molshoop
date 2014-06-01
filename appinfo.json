@@ -1,0 +1,34 @@
+{
+  "uuid" : "7112d624-6555-4279-89ae-c086e9369427",
+  "shortName" : "Molshoop",
+  "longName" : "OBS de Molshoop",
+  "companyName" : "meulenhoff.org",
+  "versionCode" : 1,
+  "versionLabel" : "1.0",
+  "watchapp" : {
+    "watchface" : true
+  },
+  "resources" : {
+      "media": [
+      	  { "type": "png", "name": "IMAGE_BEZEMMOL", "file": "images/bezemmol.png" },
+	  { "type": "png", "name": "IMAGE_BLOEMENMOL", "file": "images/bloemenmol.png" },
+	  { "type": "png", "name": "IMAGE_BLOEMMOL", "file": "images/bloemmol.png" },
+	  { "type": "png", "name": "IMAGE_LAMPIONMOL", "file": "images/lampionmol.png" },
+	  { "type": "png", "name": "IMAGE_LEESMOL", "file": "images/leesmol.png" },
+	  { "type": "png", "name": "IMAGE_MOLENBIJ", "file": "images/molenbij.png" },
+	  { "type": "png", "name": "IMAGE_PADDESTOEL", "file": "images/paddestoel.png" },
+	  { "type": "png", "name": "IMAGE_PETMOL", "file": "images/petmol.png" },
+	  { "type": "png", "name": "IMAGE_REGENMOL", "file": "images/regenmol.png" },
+	  { "type": "png", "name": "IMAGE_SCHEPMOL", "file": "images/schepmol.png" },
+	  { "type": "png", "name": "IMAGE_SNEEUWMOL", "file": "images/sneeuwmol.png" },
+	  { "type": "png", "name": "IMAGE_SNEEUWVLOK", "file": "images/sneeuwvlok.png" },
+	  { "type": "png", "name": "IMAGE_SPINNENMOL", "file": "images/spinnenmol.png" },
+	  { "type": "png", "name": "IMAGE_SPORTMOL", "file": "images/sportmol.png" },
+	  { "type": "png", "name": "IMAGE_TULPENMOL", "file": "images/tulpenmol.png" },
+	  { "type": "png", "name": "IMAGE_UFOMOL", "file": "images/ufomol.png" },
+	  { "type": "png", "name": "IMAGE_VLINDERMOL", "file": "images/vlindermol.png" },
+	  { "type": "png", "name": "IMAGE_WINTERSTERREN", "file": "images/wintersterren.png" }
+      ]
+  }
+}
+
