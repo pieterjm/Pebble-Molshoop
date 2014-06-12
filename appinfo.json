@@ -1,10 +1,10 @@
 {
-  "uuid" : "7112d624-6555-4279-89ae-c086e9369427",
+  "uuid" : "7112d624-6555-4279-89ae-c086e9379427",
   "shortName" : "Molshoop",
   "longName" : "OBS de Molshoop",
   "companyName" : "meulenhoff.org",
-  "versionCode" : 1,
-  "versionLabel" : "1.0",
+  "versionCode" : 2,
+  "versionLabel" : "1.1",
   "watchapp" : {
     "watchface" : true
   },
@@ -27,7 +27,9 @@
 	  { "type": "png", "name": "IMAGE_TULPENMOL", "file": "images/tulpenmol.png" },
 	  { "type": "png", "name": "IMAGE_UFOMOL", "file": "images/ufomol.png" },
 	  { "type": "png", "name": "IMAGE_VLINDERMOL", "file": "images/vlindermol.png" },
-	  { "type": "png", "name": "IMAGE_WINTERSTERREN", "file": "images/wintersterren.png" }
+	  { "type": "png", "name": "IMAGE_WINTERSTERREN", "file": "images/wintersterren.png" },
+	  { "type": "png", "name": "IMAGE_GEENMOL", "file": "images/geenmol.png" },
+	  { "type": "png", "name": "IMAGE_KOMPASMOL", "file": "images/kompasmol.png" }
       ]
   }
 }

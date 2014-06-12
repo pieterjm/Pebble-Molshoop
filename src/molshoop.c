@@ -1,3 +1,4 @@
+
 #include "pebble.h"
 
 static Window *window;
@@ -51,7 +52,7 @@ static void set_container_image(GBitmap **bmp_image, BitmapLayer *bmp_layer, con
 
 static void update_display(struct tm *tick_time) {
   // TODO: Only update changed values?
-  set_container_image(&background_image, background_layer, BACKGROUND_IMAGE_RESOURCE_IDS[ rand() % BACKGROUND_SIZE], GPoint(0, 22));
+
   
     // Need to be static because they're used by the system later.
   static char time_text[] = "00:00";
@@ -82,17 +83,28 @@ static void update_display(struct tm *tick_time) {
   text_layer_set_text(time_layer, time_text);
 
   static char countdown_text[20];
-  long delay = (2 * 3600 + 1404469800) - time(NULL);
-  if ( delay > 0 ) {
+  long ts = time(NULL);
+
+#define MOLSHOOP_EINDE (2 * 3600 + 1403863200)
+#define SWSNOORDHORN_BEGIN (2 * 3600 + 1404369000)
+  if ( ts < MOLSHOOP_EINDE ) {
+    long delay = MOLSHOOP_EINDE - ts;
     int d,h,m = 0;
     d = delay / 86400;
     h = ( delay - 86400 * d ) / 3600;
     m = ( delay - 86400 * d - 3600 * h ) / 60;
     snprintf(countdown_text,20,"%dd, %dh, %dm",d,h,m);
     text_layer_set_text(countdown_layer, countdown_text);  
+
+    set_container_image(&background_image, background_layer, BACKGROUND_IMAGE_RESOURCE_IDS[ rand() % BACKGROUND_SIZE], GPoint(0, 22));
+  } else if ( ts < SWSNOORDHORN_BEGIN ) {
+    text_layer_set_text(molshoop_layer, "");  
+    text_layer_set_text(countdown_layer, "");    
+    set_container_image(&background_image, background_layer, RESOURCE_ID_IMAGE_GEENMOL, GPoint(0, 22));
   } else {
-    text_layer_set_text(molshoop_layer, "SW school");  
+    text_layer_set_text(molshoop_layer, "SWS");  
     text_layer_set_text(countdown_layer, "Noordhorn");  
+    set_container_image(&background_image, background_layer, RESOURCE_ID_IMAGE_GEENMOL, GPoint(0, 22));
   }
 }
 
